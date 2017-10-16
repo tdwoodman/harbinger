@@ -75,11 +75,17 @@ Return
   Send // NOTE(trevor):%A_Space%
 Return
 
-; insert .emacs comment block
+; insert comment block
 ::=com::
-	Send `;`; ==== BEGIN XXXX ====`r`n
-	Send `;`; ==== END XXXX ====
+	Send // ==== BEGIN XXXX ====`r`n
+	Send // ==== END XXXX ====`r
 	Send,{up 1}
+Return
+
+; insert .emacs comment block
+::=lcom::
+	Send `;`; ==== BEGIN XXXX ====`r`n
+	Send `;`; ==== END XXXX ====`r
 Return
 
 ; insert header comment block (c++)
