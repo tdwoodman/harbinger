@@ -95,6 +95,14 @@ Download: <a href="https://github.com/woodboye/harbinger/releases/download/v1.0/
 
 ---
 
+##### Changelist:
+
+- 2017-10-16
+  - Modified =com to output using '//' instead of ';;' to be valid in more than just Lisp
+  - Created =lcom to output the same thing as =com except with ';;' 
+
+---
+
 <a href="https://www.gnu.org/software/emacs/">
   <img width="80" height="auto" src="emacs.png" title="Get Emacs">
 </a>
